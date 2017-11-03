@@ -19,9 +19,19 @@ namespace ConsoleApp3
             this.obytneMiestnosti = obytneMiestnosti;
             this.uzitkovaPlocha = uzitkovaPlocha;
             this.zastavanaPlocha = zastavanaPlocha;
+        }
+        public void PoskytniInformace()
+        {
+            Console.WriteLine("Parametre domu:");
+            Console.WriteLine("Nazov: {0} \nTyp: {1}\nPoschodie: {2}", nazov, typ, poschodie);
+        }
+        public float ZistiVyuzitelnostPlochy()
+        {
+            return (zastavanaPlocha / uzitkovaPlocha);
+
 
         }
+
+
     }
-   
-   
 }
